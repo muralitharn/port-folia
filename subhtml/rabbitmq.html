@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Ouimet - millow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1078px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4e4747;
+            margin-bottom: 10px;
+            font-size: 3.5rem;
+             font-weight: 10;
+        }
+        .project-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .tags {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .tag {
+            background-color: #6c757d;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .repo-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .repo-link:hover {
+            text-decoration: underline;
+        }
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .credit {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .follow-alongs {
+            font-size: 14px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .follow-alongs:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>multiple Queque</h1>
+        <!-- <div class="project-title">millow</div> -->
+        <div class="tags">
+            <div class="tag">rabbit mq</div>
+            <div class="tag">redis</div>
+            <div class="tag">docker </div>
+        </div>
+        <a href="https://github.com/your-repo-link" class="repo-link">Visit my repo<img href="Assests\icons8-github-24.png"></a>
+        <div class="description">
+            This repository was forked from <a href="https://github.com/muralitharn/rabbitmq">multiple quque </a>.
+            <br>📌 post sharing my work.
+        </div>
+        <div class="key-features">
+            <h2>Key Features:</h2>
+            <ul>
+                <li>
+                    <strong>Multiple Queue Implementation:</strong>
+                    <ul>
+                        <li>Designed and implemented <strong>multiple queues</strong> to handle tasks of varying priorities and types.</li>
+                        <li>Used <strong>RabbitMQ/Kafka</strong> for message queuing to ensure reliable and asynchronous task processing.</li>
+                        <li>Implemented queue-specific consumers to process tasks based on their priority and type.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Task Prioritization:</strong>
+                    <ul>
+                        <li>Integrated a priority-based task distribution system to route high-priority tasks to dedicated queues.</li>
+                        <li>Ensured low-priority tasks do not block high-priority tasks by using separate queues.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Asynchronous Processing:</strong>
+                    <ul>
+                        <li>Used <strong>Spring’s @Async</strong> and message-driven architectures to process tasks asynchronously.</li>
+                        <li>Improved system performance by decoupling task submission and processing.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Error Handling and Retry Mechanism:</strong>
+                    <ul>
+                        <li>Implemented robust error handling and retry mechanisms for failed tasks.</li>
+                        <li>Used <strong>Dead Letter Queues (DLQ)</strong> to handle unprocessable tasks and ensure no data loss.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Monitoring and Logging:</strong>
+                    <ul>
+                        <li>Integrated monitoring tools like <strong>Spring Actuator</strong> and <strong>Prometheus</strong> to track queue performance.</li>
+                        <li>Added detailed logging for task submission, processing, and errors for better debugging.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <a href="#" class="follow-alongs">See all follow-alongs</a>
+    </div>
+</body>
+</html>
