@@ -35,7 +35,8 @@
     }
     .contact-info {
       list-style-type: none;
-      padding-left: 0;
+      padding-left: 29px;
+      padding-top: 26px;
     }
     .contact-info li {
       margin-bottom: 10px;
@@ -69,32 +70,41 @@
     .checkbox-list input[type="checkbox"] {
       margin-right: 10px;
     }
+    .bottom-header{
+      height: 36px;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    margin-left: 50px;
+    font-size: 39px;
+    font-weight: 600px;
+    }
   </style>
 </head>
 <body>
   <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
     <div class="container-fluid" >
-      <a class="navbar-brand" href="/">Murali Tharan</a>
+      <a class="navbar-brand" href="/">Murali</a>
       <div class="ms-auto">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
-          <li class="nav-item"><a class="nav-link" href="Assests\murali@23.pdf">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Assests\murali@23.pdf">Resume</a></li>
         </ul>
       </div>
     </div>
   </header>
-
+  <div class="bottom-header">  Murali-Tharan</div>
   <div class="container py-5">
     <div class="row">
-      <div class="col-lg-4 text-center">
-        <img src="Assests\muraliCoverpic.jpg" class="profile-img" alt="Murali">
+      <div class="col-lg-4 text-center" style=" text-align: left !important ;">
+        <img src="../Assests\muraliCoverpic.jpg" class="profile-img" alt="Murali">
         <ul class="contact-info mt-4">
-          <li><img href="Assests\icons8-home-50.png"><span type="checkbox" disabled> <a href="to be filled" target="_blank">Murali Tharan.info</a></li>
-          <li><img href="Assests\icons8-gmail-logo-30.png"><span type="checkbox" checked disabled> <a href="mailto:charles.ouimet@gmail.com">muralitharn230@gmail.com</a></li>
-          <li><img href="Assests\icons8-github-24.png"><span type="checkbox" disabled> <a href="https://github.com/muralitharn" target="_blank">murali-git</a></li>
-          <li><img href="Assests\icons8-linkedin-circled-30.png"><span type="checkbox" disabled> <a href="https://www.linkedin.com/in/murali-md23/" target="_blank">murali-linkedin</a></li>
-          <li><img href="Assests\icons8-instagram-50.png"><span type="checkbox" disabled> <a href="https://www.instagram.com/__md____23/" target="_blank">murali-insta</a></li>
+          <li><img src="../Assests\icons8-home-50.png" style="height: 25px;"><span type="checkbox" disabled> <a href="to be filled" target="_blank">Murali Tharan.info</a></li>
+          <li><img src="../Assests\icons8-gmail-logo-30.png"><span type="checkbox" checked disabled> <a href="mailto:charles.ouimet@gmail.com">muralitharn230@gmail.com</a></li>
+          <li><img src="../Assests\icons8-github-24.png"><span type="checkbox" disabled> <a href="https://github.com/muralitharn" target="_blank">murali-git</a></li>
+          <li><img src="../Assests\icons8-linkedin-circled-30.png"><span type="checkbox" disabled> <a href="https://www.linkedin.com/in/murali-md23/" target="_blank">murali-linkedin</a></li>
+          <li><img src="../Assests\icons8-instagram-50.png" style="height: 25px;"><span type="checkbox" disabled> <a href="https://www.instagram.com/__md____23/" target="_blank">murali-insta</a></li>
         </ul>
         <p class="mt-3"></p>
       </div>
@@ -115,16 +125,17 @@
         <section id="interests" class="mt-5">
           <h2 class="section-title">Interests</h2>
           <p class="lead">
-            Spring boot , docker ,Redis ,React , SQL/NoSQL
+            Spring boot ,docker ,Redis ,React ,SQL/NoSQL
           </p>
         </section>
 
         <section id="resume" class="mt-5">
+          
           <h2 class="section-title">Resume</h2>
           <p class="lead">
             See my <a href="index.html">Career Changelog</a> for the details.
           </p>
-          <a href="Assests\murali@23.pdf" class="btn-download" download>Download Resume</a>
+          <a href="../Assests\murali@23.pdf" class="btn-download" download>Download Resume</a>
         </section>
       </div>
     </div>
@@ -137,7 +148,7 @@
     <div class="container-fluid">
       <div class="ms-auto">
         <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item"><small><a class="nav-link" href="https://techfolios.github.io" target="_blank">Made with Techfolios</a></small></li>
+          <li class="nav-item"><small><a class="nav-link" href="https://github.com/muralitharn" target="_blank">Made with Techfolios</a></small></li>
         </ul>
       </div>
     </div>

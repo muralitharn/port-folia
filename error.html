@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Error 404 - Page Not Found</title>
   <style>
-    /* General Reset */
+    
     * {
       margin: 0;
       padding: 0;
@@ -14,8 +14,8 @@
 
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f4f4f9; /* Light background */
-      color: #333; /* Dark text */
+      background-color: #f4f4f9;
+      color: #333; 
       display: flex;
       justify-content: center;
       align-items: center;
@@ -24,28 +24,28 @@
     }
 
     .error-container {
-      background-color: #ffffff; /* White container */
+      background-color: #ffffff; 
       padding: 2rem;
-      border-radius: 12px; /* Rounded corners */
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      border-radius: 12px; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
       max-width: 400px;
       width: 100%;
     }
 
     h1 {
       font-size: 3rem;
-      color: #777777; /* Error color (red/pink) */
+      color: #777777; 
       margin-bottom: 1rem;
     }
 
     p {
       font-size: 1.2rem;
       margin-bottom: 2rem;
-      color: #555; /* Slightly lighter text */
+      color: #555; 
     }
 
     .home-button {
-      background-color: #060708; /* Primary button color (blue) */
+      background-color: #060708;
       color: #fff;
       border: none;
       padding: 0.8rem 1.5rem;
@@ -56,27 +56,23 @@
     }
 
     .home-button:hover {
-      background-color: #383a3d; /* Darker blue on hover */
+      background-color: #383a3d; 
     }
 
-    /* Add your portfolio's primary and secondary colors here */
-    /* Example: */
-    /* .home-button { background-color: #your-primary-color; } */
-    /* h1 { color: #your-secondary-color; } */
+
   </style>
 </head>
 <body>
   <div class="error-container">
     <h1>404</h1>
     <p>Oops! The page you're looking for doesn't exist.</p>
-    <!-- Add an ID to the button -->
     <button class="home-button" id="homeButton">Go Back Home</button>
   </div>
   
   <script>
-    // JavaScript to handle the button click and redirect to index.html
+    
     document.getElementById('homeButton').addEventListener('click', function() {
-      window.location.href = "index.html"; // Redirect to index.html
+      window.location.href = "index.html"; 
     });
   </script>
 </body>
