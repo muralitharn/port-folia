@@ -23,7 +23,7 @@
         h1 {
             color: #464b51;
             margin-bottom: 10px;
-            /* font-size: 24px; */
+            text-decoration: underline;
             font-size: 3.5rem;
             font-weight: 10;
         }
@@ -78,7 +78,7 @@
 }
 
 .key-features h2 {
-    color: #007BFF;
+    color: #0b0c0c;
     font-size: 22px;
     margin-bottom: 15px;
 }
@@ -89,11 +89,20 @@
 }
 
 .key-features ul li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .key-features ul li strong {
     color: #333;
+}
+.key-features{
+    padding: 23px;
+    width: 84%;
+    background-color: #e2dddd;
+    height: 58%;
+    border-radius: 9px;
+    line-height: 1.5;
+    font-size: 17px;
 }
     </style>
 </head>
@@ -114,15 +123,13 @@
         </div>
         <div class="credit">
             
-           <span> Key Features:</span>
            <div class="key-features">
             <h2>Key Features:</h2>
-            <ul>
+            <ul class="key-features" style="color:#333">
                 <li>
                     <strong>Customer Management API:</strong>
                     <ul>
-                        <li>Designed and implemented RESTful APIs for CRUD operations on customer details.</li>
-                        <li>Used <strong>Spring Data JPA</strong> for seamless interaction with the transactional database.</li>
+                        <li>Designed and implemented RESTful APIs .</li>
                         <li>Ensured data consistency and integrity using <strong>Spring Transaction Management</strong>.</li>
                     </ul>
                 </li>
@@ -157,7 +164,6 @@
                     <strong>Transactional Database:</strong>
                     <ul>
                         <li>Used a relational database (e.g., <strong>MySQL/PostgreSQL</strong>) with <strong>ACID compliance</strong> to ensure data integrity.</li>
-                        <li>Implemented transactional operations to handle complex workflows, such as updating customer details and sending emails in a single transaction.</li>
                     </ul>
                 </li>
             </ul>
