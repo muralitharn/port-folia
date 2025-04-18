@@ -19,7 +19,18 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 2; 
         }
+        #vanta-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1; 
+        }
+
         h1 {
             color: #464b51;
             margin-bottom: 10px;
@@ -118,7 +129,7 @@
         </div>
         <a href="https://github.com/muralitharn/test-task/tree/main" class="repo-link">Visit my repo</a>
         <div class="description">
-            This repository was inspired  from <a href="https://github.com/dappuniversity/fun-pump">test-task-data</a>.
+            This repository was inspired  from <a href="https://www.linkedin.com/in/mohkhandan/">test-task-data</a>.
             <br>📌 post sharing my work.
         </div>
         <div class="credit">
@@ -171,4 +182,28 @@
         <a href="../index.html#follow-alongs" class="follow-alongs">See all follow-alongs</a>
     </div>
 </body>
+ ->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+ <script>
+     document.addEventListener('DOMContentLoaded', () => {
+         VANTA.BIRDS({
+             el: "body", 
+             mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0xededed,
+  color1: 0xb6b6b6,
+  color2: 0x5920ac,
+  birdSize: 1.10,
+  speedLimit: 3.00,
+  separation: 22.00,
+  alignment: 33.00
+         });
+     });
+    </script> 
 </html>
