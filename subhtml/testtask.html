@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muralitharan G.S</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1112px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 2; 
+        }
+        #vanta-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1; 
+        }
+
+        h1 {
+            color: #464b51;
+            margin-bottom: 10px;
+            text-decoration: underline;
+            font-size: 3.5rem;
+            font-weight: 10;
+        }
+        .project-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .tags {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .tag {
+            background-color: #6c757d;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .repo-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .repo-link:hover {
+            text-decoration: underline;
+        }
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .credit {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .follow-alongs {
+            font-size: 14px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .follow-alongs:hover {
+            text-decoration: underline;
+        }
+
+        .key-features {
+    margin-bottom: 20px;
+}
+
+.key-features h2 {
+    color: #0b0c0c;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.key-features ul {
+    list-style-type: disc;
+    /* margin-left: 20px; */
+}
+
+.key-features ul li {
+    margin-bottom: 5px;
+}
+
+.key-features ul li strong {
+    color: #333;
+}
+.key-features{
+    padding: 23px;
+    width: 84%;
+    background-color: #e2dddd;
+    height: 58%;
+    border-radius: 9px;
+    line-height: 1.5;
+    font-size: 17px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test task</h1>
+        <!-- <div class="project-title">Test task</div> -->
+        <div class="tags">
+            <div class="tag">spring security(JWT)</div>
+            <div class="tag">smpt mailsender</div>
+            <div class="tag">cron</div>
+            <div class="tag">plsql  scripts </div>
+        </div>
+        <a href="https://github.com/muralitharn/test-task/tree/main" class="repo-link">Visit my repo</a>
+        <div class="description">
+            This repository was inspired  from <a href="https://www.linkedin.com/in/mohkhandan/">test-task-data</a>.
+            <br>📌 post sharing my work.
+        </div>
+        <div class="credit">
+            
+           <div class="key-features">
+            <h2>Key Features:</h2>
+            <ul class="key-features" style="color:#333">
+                <li>
+                    <strong>Customer Management API:</strong>
+                    <ul>
+                        <li>Designed and implemented RESTful APIs .</li>
+                        <li>Ensured data consistency and integrity using <strong>Spring Transaction Management</strong>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Redis Caching:</strong>
+                    <ul>
+                        <li>Integrated <strong>Redis</strong> to cache frequently accessed customer data, reducing database load and improving API response times.</li>
+                        <li>Implemented cache eviction strategies to ensure data freshness.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>JWT Authentication:</strong>
+                    <ul>
+                        <li>Secured the API using <strong>JSON Web Tokens (JWT)</strong> for authentication and authorization.</li>
+                        <li>Implemented role-based access control to restrict access to sensitive endpoints.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Swagger API Documentation:</strong>
+                    <ul>
+                        <li>Used <strong>Swagger</strong> to generate interactive API documentation, making it easier for developers to understand and test the APIs.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>MailSender for Seasonal Emails:</strong>
+                    <ul>
+                        <li>Developed a feature to send seasonal emails to customers using <strong>Spring MailSender</strong>.</li>
+                        <li>Automated the email-sending process using <strong>Spring Scheduler</strong> to trigger emails at specific intervals.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Transactional Database:</strong>
+                    <ul>
+                        <li>Used a relational database (e.g., <strong>MySQL/PostgreSQL</strong>) with <strong>ACID compliance</strong> to ensure data integrity.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div></div>
+        <a href="../index.html#follow-alongs" class="follow-alongs">See all follow-alongs</a>
+    </div>
+</body>
+ ->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+ <script>
+     document.addEventListener('DOMContentLoaded', () => {
+         VANTA.BIRDS({
+             el: "body", 
+             mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0xededed,
+  color1: 0xb6b6b6,
+  color2: 0x5920ac,
+  birdSize: 1.10,
+  speedLimit: 3.00,
+  separation: 22.00,
+  alignment: 33.00
+         });
+     });
+    </script> 
+</html>

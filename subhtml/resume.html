@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Murali tharan Professional Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: block;
+      object-fit: cover;
+      object-fit: cover
+    }
+    .lead {
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: #555;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .contact-info {
+      list-style-type: none;
+      padding-left: 29px;
+      padding-top: 26px;
+    }
+    .contact-info li {
+      margin-bottom: 10px;
+    }
+    .contact-info a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    .btn-download {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .btn-download:hover {
+      background-color: #0056b3;
+    }
+    .checkbox-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .checkbox-list li {
+      margin-bottom: 10px;
+    }
+    .checkbox-list input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    .bottom-header{
+      height: 36px;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    margin-left: 138px;
+    font-size: 42px;
+    font-weight: 600px;
+    }
+    header#header1{
+      position: sticky;
+      top: 0px;
+      padding: 5px; 
+      z-index: 20;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom" id="header1">
+    <div class="container-fluid" >
+      <a class="navbar-brand" href="../index.html">Murali</a>
+      <div class="ms-auto">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Assests\murali@23.pdf">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="bottom-header" >  Murali-Tharan</div>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-4 text-center" style=" text-align: left !important ;">
+        <img src="../Assests\muraliCoverpic.jpg" class="profile-img" alt="Murali">
+        <ul class="contact-info mt-4">
+          <li><img src="../Assests\icons8-home-50.png" style="height: 25px;"><span type="checkbox" disabled> <a href="to be filled" target="_blank">Murali Tharan.info</a></li>
+          <li><img src="../Assests\icons8-gmail-logo-30.png"><span type="checkbox" checked disabled> <a href="mailto:charles.ouimet@gmail.com">muralitharn230@gmail.com</a></li>
+          <li><img src="../Assests\icons8-github-24.png"><span type="checkbox" disabled> <a href="https://github.com/muralitharn" target="_blank">murali-git</a></li>
+          <li><img src="../Assests\icons8-linkedin-circled-30.png"><span type="checkbox" disabled> <a href="https://www.linkedin.com/in/murali-md23/" target="_blank">murali-linkedin</a></li>
+          <li><img src="../Assests\icons8-instagram-50.png" style="height: 25px;"><span type="checkbox" disabled> <a href="https://www.instagram.com/__md____23/" target="_blank">murali-insta</a></li>
+        </ul>
+        <p class="mt-3"></p>
+      </div>
+      <div class="col-lg-8">
+        <section id="about">
+          <h2 class="section-title" id="aboutme">About Me</h2>
+          <p class="lead">
+            I’m a Associate  Software Developer with a years of experience, and I  love coding, especially when it involves tacking complex problems and collaborating with teams. From low-level design to getting into the nitty-gritty of the code, I enjoy working through the tough questions, whether it’s defining domain boundaries or design architecture.
+          </p>
+          <p class="lead">
+            I’m passionate about API, spring boot ,Aws Docker , mailserver, mongodb, sql and plsql scripts .
+          </p>
+          <p class="lead">
+            I like to keep things light and fun, but I’m serious about delivering quality. Whether it’s diving into code reviews or process improvements, I aim for a balance of high standards and practical solutions.
+          </p>
+        </section>
+
+        <section id="interests" class="mt-5">
+          <h2 class="section-title">Interests</h2>
+          <p class="lead">
+            Spring boot ,docker ,Redis ,React ,SQL/NoSQL
+          </p>
+        </section>
+
+        <section id="resume" class="mt-5">
+          
+          <h2 class="section-title">Resume</h2>
+          <p class="lead">
+            See my <a href="../index.html#career-changelog">Career Changelog</a> for the details.
+          </p>
+          <a href="../Assests\murali@23.pdf" class="btn-download" download>Download Resume</a>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light py-5" id="career-changelog">
+  </div>
+
+  <footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+    <div class="container-fluid">
+      <div class="ms-auto">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><small><a class="nav-link" href="https://github.com/muralitharn" target="_blank">Made with Techfolios</a></small></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</div>
+</body>
+ <!-- Three.js and Vanta.js -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+ <script>
+     // Initialize Vanta.js BIRDS effect
+     document.addEventListener('DOMContentLoaded', () => {
+         VANTA.BIRDS({
+             el: "body", // Apply to body for full-page background
+             mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0xededed,
+  color1: 0xb6b6b6,
+  color2: 0x5920ac,
+  birdSize: 1.10,
+  speedLimit: 8.00,
+  separation: 22.00,
+  alignment: 33.00
+         });
+     });
+    </script>  
+</html>

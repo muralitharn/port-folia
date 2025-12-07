@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Murali Tharan | Professional Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    .profile-img {
+      width: 362px;
+      height: 344px;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: block;
+    }
+    .lead {
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: #787878;
+    }
+    .social-icon {
+      width: 24px;
+      height: 24px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .card {
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      transition: transform 0.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);
+      border-radius: 16px;
+      border: 1px solid #e0e0e0;
+    }
+    .card:hover {
+      transform: translateY(-8px) scale(1.04);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+      border-color: #b6b6b6;
+      background-color: #e9ecef;
+    }
+    .badge {
+      margin-right: 5px;
+    }
+    .latest-work {
+      background-color: #f8f9fa;
+      padding: 40px 0;
+    }
+    .latest-work h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .latest-work .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .latest-work .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .latest-work .card-text {
+      color: #555;
+    }
+    .changelog {
+      background-color: #e9ecef;
+      padding: 40px 0;
+    }
+    .changelog h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .changelog .version {
+      margin-bottom: 30px;
+    }
+    .changelog .version h3 {
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+    .changelog .version ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .changelog .version ul li {
+      margin-bottom: 10px;
+    }
+    .nav-link:hover{
+      text-decoration: underline;
+    }
+    .col::before{
+      opacity: 1px;
+    } 
+
+    #text {
+  font-family: monospace;
+  width: 13ch; 
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #000;
+  animation: 
+    typing 8.5s steps(15) infinite, 
+    blink-caret 0.50s step-end infinite;
+  margin: 0 auto; 
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 13ch; } 
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #000; }
+}
+header#header{
+    position: sticky;
+    top: 0px;
+    padding: 5px; 
+    z-index: 20;
+  }
+
+  #header_bg {
+  transition: background-color 0.3s ease;
+}
+#changeHeaderColor{
+  transition: background-color 0.3s ease;
+}
+.scrolled-header {
+  background-color: #d4d4d4 !important;
+}
+.scrolled-header #headingsection {
+  color: black !important;
+}
+
+/* Form Container Styles */
+.form-container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: -1px -1px 60px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container h1 {
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #4a5568;
+  font-size: 14px;
+}
+
+.form-group .required::after {
+  content: " *";
+  color: #e53e3e;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+}
+
+.form-group .error {
+  color: #e53e3e;
+  font-size: 14px;
+  margin-top: 6px;
+  display: none;
+}
+
+.form-group input.input-error {
+  border-color: #e53e3e;
+}
+
+.form-group input.input-success {
+  border-color: #48bb78;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.form-container button {
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container button:hover {
+  background-color: #3182ce;
+}
+
+.form-container button:active {
+  transform: translateY(1px);
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #718096;
+  font-size: 14px;
+}
+
+/* Responsive styles for form container */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+  
+  .form-container h1 {
+    font-size: 24px;
+  }
+  
+  .form-group input {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Success Notification Toast */
+.success-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #48bb78;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  font-weight: 500;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.success-notification.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .success-notification {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    font-size: 14px;
+    padding: 14px 20px;
+  }
+}
+
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+     <script>
+      
+         
+         document.addEventListener('DOMContentLoaded', () => {
+             VANTA.BIRDS({
+                 el: "#changelog1", 
+                 mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0xededed,
+      color1: 0xb6b6b6,
+      color2: 0x5920ac,
+      birdSize: 1.10,
+      speedLimit: 3.00,
+      separation: 22.00,
+      alignment: 33.00
+             });
+         });
+        </script> 
+
+<script>
+  window.addEventListener('scroll', function () {
+    const headerBg = document.getElementById('header_bg');
+  
+    if (window.scrollY > 50) {
+      headerBg.classList.add('scrolled-header');
+    } else {
+      headerBg.classList.remove('scrolled-header');
+    }
+  });
+  </script>
+  
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('contactForm');
+        const inputs = {
+            name: document.getElementById('name'),
+            email: document.getElementById('email'),
+            phone: document.getElementById('phone'),
+            url: document.getElementById('url')
+        };
+        
+        const errors = {
+            name: document.getElementById('nameError'),
+            email: document.getElementById('emailError'),
+            phone: document.getElementById('phoneError'),
+            url: document.getElementById('urlError')
+        };
+
+        
+        
+        // Validation functions
+        function validateName(name) {
+            // At least 2 characters, only letters and spaces
+            const nameRegex = /^[A-Za-z\s]{2,}$/;
+            return nameRegex.test(name.trim());
+        }
+        
+        function validateEmail(email) {
+            // Standard email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        
+        function validatePhone(phone) {
+            // Accepts international numbers: optional +, then 10-15 digits
+            // Also accepts formats with spaces, hyphens, parentheses
+            const phoneRegex = /^[\+]?[0-9\s\-\(\)]{10,15}$/;
+            return phoneRegex.test(phone.replace(/\s/g, ''));
+        }
+        
+        function validateURL(url) {
+            if (!url) return true;
+            
+            // Check if it's a valid GitHub or LinkedIn URL
+            const githubRegex = /^(https?:\/\/)?(www\.)?github\.com\/[a-zA-Z0-9_-]+\/?$/;
+            const linkedinRegex = /^(https?:\/\/)?(www\.)?linkedin\.com\/(in|pub|company)\/[a-zA-Z0-9_-]+\/?$/;
+            
+            return githubRegex.test(url) || linkedinRegex.test(url);
+        }
+        
+        // Real-time validation as user types
+        Object.keys(inputs).forEach(fieldName => {
+            inputs[fieldName].addEventListener('input', function() {
+                validateField(fieldName);
+            });
+            
+            inputs[fieldName].addEventListener('blur', function() {
+                validateField(fieldName);
+            });
+        });
+        
+        function validateField(fieldName) {
+            const value = inputs[fieldName].value.trim();
+            let isValid = false;
+            
+            // Remove previous validation classes
+            inputs[fieldName].classList.remove('input-error', 'input-success');
+            errors[fieldName].style.display = 'none';
+            
+            // Skip validation for empty optional URL field
+            if (fieldName === 'url' && value === '') {
+                return true;
+            }
+            
+            // Validate based on field type
+            switch(fieldName) {
+                case 'name':
+                    isValid = validateName(value);
+                    break;
+                case 'email':
+                    isValid = validateEmail(value);
+                    break;
+                case 'phone':
+                    isValid = validatePhone(value);
+                    break;
+                case 'url':
+                    isValid = validateURL(value);
+                    break;
+            }
+            
+            // Display validation result
+            if (!isValid && value !== '') {
+                inputs[fieldName].classList.add('input-error');
+                errors[fieldName].style.display = 'block';
+            } else if (isValid && value !== '') {
+                inputs[fieldName].classList.add('input-success');
+            }
+            
+            return isValid;
+        }
+        
+        // Success notification function
+        function showSuccessNotification(message) {
+            // Remove any existing notification
+            const existingNotification = document.querySelector('.success-notification');
+            if (existingNotification) {
+                existingNotification.remove();
+            }
+            
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = 'success-notification';
+            notification.textContent = message;
+            
+            // Add to body
+            document.body.appendChild(notification);
+            
+            // Trigger animation
+            setTimeout(() => {
+                notification.classList.add('show');
+            }, 10);
+            
+            // Remove after 2 seconds
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => {
+                    notification.remove();
+                }, 300); // Wait for fade-out animation
+            }, 2000);
+        }
+        
+        // Function to save data to Google Sheets
+        async function saveToGoogleSheets(formData) {
+            // Replace this URL with your Google Apps Script Web App URL after deployment
+            const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwQbTj3V0WDuBa76HWjaYc7j233CmLlBLIUIxKdOJixJnpwGemREwK1FFXqETbdwu_HvA/exec';
+            
+            // Check if URL is still placeholder
+            if (GOOGLE_SCRIPT_URL === 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE') {
+                console.warn('Google Apps Script URL not configured. Please set up the script first.');
+                // Still return true so form submission appears successful to user
+                return true;
+            }
+            
+            try {
+                // Build URL with parameters (using GET method - more reliable)
+                const params = new URLSearchParams({
+                    name: formData.name || '',
+                    email: formData.email || '',
+                    phone: formData.phone || '',
+                    url: formData.url || 'Not provided',
+                    timestamp: formData.timestamp || new Date().toISOString()
+                });
+                
+                const urlWithParams = GOOGLE_SCRIPT_URL + '?' + params.toString();
+                
+                console.log('Sending data to Google Sheets:', formData);
+                
+                // Use fetch with GET method (more reliable for Google Apps Script)
+                const response = await fetch(urlWithParams, {
+                    method: 'GET',
+                    mode: 'no-cors' // Required for cross-origin requests
+                });
+                
+                // Note: With no-cors mode, we can't read the response
+                // But the data should still be sent to Google Sheets
+                console.log('Data sent to Google Sheets successfully');
+                return true;
+            } catch (error) {
+                console.error('Error saving to Google Sheets:', error);
+                // Return true anyway so user sees success message
+                // The data might still be saved even if there's an error
+                return true;
+            }
+        }
+        
+        // Form submission handler
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            let isFormValid = true;
+            
+            // Validate all required fields
+            Object.keys(inputs).forEach(fieldName => {
+                // URL is optional, skip if empty
+                if (fieldName === 'url' && inputs[fieldName].value.trim() === '') {
+                    return;
+                }
+                
+                if (!validateField(fieldName)) {
+                    isFormValid = false;
+                }
+            });
+            
+            if (isFormValid) {
+                // Get form data
+                const formData = {
+                    name: inputs.name.value.trim(),
+                    email: inputs.email.value.trim(),
+                    phone: inputs.phone.value.trim(),
+                    url: inputs.url.value.trim() || 'Not provided',
+                    timestamp: new Date().toISOString()
+                };
+                
+                // Save to Google Sheets
+                saveToGoogleSheets(formData).then(success => {
+                    if (success) {
+                        // Display success notification
+                        showSuccessNotification('You have been connected!');
+                        
+                        // Optional: Reset form after successful submission
+                        // form.reset();
+                        // Remove success classes
+                        // Object.keys(inputs).forEach(fieldName => {
+                        //     inputs[fieldName].classList.remove('input-success');
+                        // });
+                    } else {
+                        // Still show success to user, but log error
+                        showSuccessNotification('You have been connected!');
+                        console.error('Failed to save to Google Sheets, but form was submitted');
+                    }
+                });
+                
+                // Log form data
+                console.log('Form data:', formData);
+            } else {
+                alert('Please fix the errors in the form before submitting.');
+            }
+        });
+        
+        // Example of valid inputs for testing
+        console.log('Test with these valid examples:');
+        console.log('- Name: John Doe');
+        console.log('- Email: john@example.com');
+        console.log('- Phone: +12345678901 or 1234567890');
+        console.log('- URL: https://github.com/username or https://linkedin.com/in/username');
+    });
+</script>
+
+  
+  
+</head>
+<body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom" id="header" >
+    <div class="container-fluid" id="header_bg">
+      <a class="navbar-brand" id="navbarb" href="/">Murali  Tharan</a>
+      <div class="ms-auto"  id="changeHeaderColor">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" id="headingsection" href="#project1">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" id="headingsection" href="#follow-alongs">Follow-alongs</a></li>
+          <li class="nav-item"><a class="nav-link"  id="headingsection" href="subhtml\resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="bg-gradient py-3" style="background-color: #f8f9fa;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <img src="Assests/muraliCoverpic.jpg" class="profile-img" alt="Murali Tharan" style="object-fit: cover;">
+        </div>
+        <div class="col-lg-8">
+          <h1 class="display-4 text-center" id="text">Murali-Tharan</h1>
+          <p class="lead text-center">Software Developer</p>
+          <p class="lead">I'm a Software Developer specializing in backend development. Designing systems really piques my curiosity!</p>
+          <hr class="my-4">
+          <p class="lead m-0">
+            Interests:
+            Springboot ,docker, jenkins ,spring security ,System Design ,AWS ,React ,Serverless ,SQL/NoSQL
+          </p> 
+          <hr class="my-4">
+          <div class="row text-center">
+            <div class="col"><a href="index.html" target="_blank"><img src="Assests/icons8-home-50.png" class="social-icon"></a></div>
+            <div class="col"><a href="mailto:muralitharn230@gmail.com" target="_blank"><img src="Assests\icons8-gmail-logo-30.png" class="social-icon"></a></div>
+            <div class="col"><a href="https://github.com/muralitharn" target="_blank"><img src="Assests\icons8-github-24.png" class="social-icon"></a></div>
+            <div class="col"><a href="https://www.linkedin.com/in/murali-md23/" target="_blank"><img src="Assests\icons8-linkedin-circled-30.png" class="social-icon"></a></div>
+            <div class="col"><a href="https://www.instagram.com/__md____23/" target="_blank"><img src="Assests\icons8-instagram-50.png" class="social-icon"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row g-3 justify-content-center">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Java</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Spring</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Spring Boot</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Hibernate</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Redis</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">AWS</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">CI/CD</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Docker</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Spring Cloud</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Spring Batch</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">SMTP</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Mailer-Q</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">RabbitMQ</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Bitbucket</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Kibana</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Grafana</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">React</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Swagger (OpenAPI)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">API Gateway</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Jenkins</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">JWT</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">OAuth</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">SLF4J</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">Spring Security</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body p-2">
+            <span class="fw-bold">JUnit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bg-gradient py-3" style="background-color: #e9ecef;" id="projects">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <h1 class="display-4 text-start">Projects</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4" id="project1">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><a class="nav-link" href="subhtml\projects.html">loan-low ,routee</a></h5>
+              <p>
+                <span class="badge bg-secondary">Springboot</span>
+                <span class="badge bg-secondary">rabbit mq </span>
+                <span class="badge bg-secondary">mailer q</span>
+                <span class="badge bg-secondary">jwt</span>
+              </p>
+              <p class="card-text">Includes Spring API (Redis ,Swagger ,JWT, etc.)</p>
+            </div>
+            <div class="card-footer">
+              <div class="text-center">
+                <a href="subhtml\projects.html" class="btn btn-outline-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gradient py-3" style="background-color: #f8f9fa;" id="follow-alongs">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-md-12">
+          <h1 class="display-4 text-start">Follow-alongs</h1>
+          <p>Follow-alongs are some work that i bring to the table, throughout the process.</p>
+          <p>These are some addtional works to play with my fellow dev mates and some task that we do on weekends .</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><a class="nav-link" href="subhtml\testtask.html">test-task</a></h5>
+              <p>
+                <span class="badge bg-secondary">Smpt Mail server</span>
+                <span class="badge bg-secondary">junit</span>
+                <span class="badge bg-secondary">docker</span>
+                <span class="badge bg-secondary">jwt</span>
+              </p>
+              <p class="card-text">repo refereces i took from  <a href="https://github.com/pkini2002/JWT-Authentication-SpringBoot" target="_blank">spring jwt from base its architecture</a>.</p>
+            </div>
+            <div class="card-footer">
+              <div class="text-center">
+                <a href="https://github.com/muralitharn/test-task" class="btn btn-outline-dark" target="_blank">My repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><a class="nav-link" href="subhtml\rabbitmq.html">multiple Queque</a></h5>
+              <p>
+                <span class="badge bg-secondary">Aws</span>
+                <span class="badge bg-secondary">rabbit mq</span>
+                <span class="badge bg-secondary">redis </span>
+              </p>
+              <p class="card-text">some  refereces i took from  <a href="https://rameshfadatare.medium.com/spring-boot-microservices-with-rabbitmq-example-92a38cbe08fc" target="_blank">multiple quque </a>.</p>
+            </div>
+            <div class="card-footer">
+              <div class="text-center">
+                <a href="https://github.com/couimet/millow/tree/step_by_step_progress#readme" class="btn btn-outline-dark" target="_blank">My repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+
+  <div class="changelog" >
+    <div class="container" id="changelog1">
+      <h2 id="career-changelog"> Career Changelog</h2>
+      <p class="highlightin" style="background-color: #f1dc6b; padding-left: 48px;
+  border-radius: 12px; padding-right: 20px;">This changelog is a fun little experiment I built to showcase my journey and projects. For a complete overview of my  skills, check out my <a href="subhtml\resume.html#btn-download">resume</a> page and you'll find a downloadable PDF.</p>
+      <p>All notable changes to this project (my career) will be documented in this section.</p>
+      
+      <div class="version">
+        <h3>3.0.0 - Associate Software Developer @ softsuave technologies (2024-03 to Present)</h3>
+        <h4>Added</h4>
+        <ul>
+          <li>Routine consists of learning   company level project sonar qube , ratelimiting , load balancer, deployment dailycode change ,sprints  </li>
+          <li>Learned, how interation between a client and understanding requirement and communicating with fellow developer </li>
+          <li>Dead line task , pressicssion , adapability, and some technologies 😊.</li>
+        </ul>
+        <h4>Trainee @ softsuave </h4>
+        <ul>
+          <li>learened basics in springboot , and concepts with MVC </li>
+        </ul>
+      </div>-
+
+      <div class="version">
+        <h3>2.4.0 - Trainee @ softsuave  (2024-01 to 2024-03)</h3>
+        <h4>Added</h4>
+        <ul>
+          <li>worked on campaign based projects involes large data dealing for a single user .</li>
+          <li>had a chances to work on large number of microservices(nearly 40 services) including routee' and api gate way, spring cloud and others  <code>spring 3.00</code> and out of <code>react</code> v9.</li>
+          <li>experiences on writing unit and intergation test case and running pipe lines and deployment activities.</li>
+        </ul>
+        <h4>Deprecated</h4>
+        <ul>
+          <li>loan low (a online loan provided platform that provides loan to <code>MSME</code>) 2024-01.</li>
+        </ul>
+      </div>
+
+      <div class="version">
+        <h3>2.3.0 - intern  Developer @ amphyo technologies (2023-06 to 2023-011)</h3>
+        <h4>Added</h4>
+        <ul>
+          <li>I-frames  <code>Technical Leadership Community (TLC)</code>. The group of 4 member  across  ui team' worked to devlope the ui part of the e-commerces site  and i was asigned with billing part and refund part </li>
+          <li>Daily code quest  <code>observability-as-code</code>consists of working on quest like solving leetcode  and hacker rank .</li>
+          <li>Knowledge in  manual testing , worked on couple of tickets manual testing the module .</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="latest-work">
+    <div class="container">
+      <h2>SOME OF MY LATEST WORK</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">implemented multiple quques for routee </h5>
+              <p class="card-text">implemented multiple exchanges and  quque</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">developed a security layer</h5>
+              <p class="card-text">implemented a jwt token for all api</p>
+              <p class="card-text">responsible for authentication and authorization other six services </p>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">cost cutting technique for an API</h5>
+              <p class="card-text">stored an API response as json node in db  and its respective code changes </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">moved postgres db data to  click house for fast reterival </h5>
+              <p class="card-text">involes large qurey changes and data base scripts </p>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">improved api response by adding redis cache </h5>
+              <p class="card-text">multiple data base were been used to improve the response and their config for different services </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <h1>Let Us Grab For a Coffee </h1>
+    <form id="contactForm">
+        <!-- Name Field -->
+        <div class="form-group">
+            <label for="name" class="required">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <div class="error" id="nameError">Name must be at least 2 characters and contain only letters and spaces</div>
+        </div>
+        
+        <!-- Email Field -->
+        <div class="form-group">
+            <label for="email" class="required">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+            <div class="error" id="emailError">Please enter a valid email address</div>
+        </div>
+        
+        <!-- Phone Field -->
+        <div class="form-group">
+            <label for="phone" class="required">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (123) 456-7890 or 01234567890" required>
+            <div class="error" id="phoneError">Please enter a valid phone number (10-15 digits, with optional country code)</div>
+        </div>
+        
+        <!-- URL Field (GitHub/LinkedIn) -->
+        <div class="form-group">
+            <label for="url">GitHub or LinkedIn Profile URL</label>
+            <input type="url" id="url" name="url" placeholder="https://github.com/username or https://linkedin.com/in/username">
+            <div class="error" id="urlError">Please enter a valid GitHub or LinkedIn URL</div>
+        </div>
+        
+        <div class="button-container">
+            <button type="submit">Submit Information</button>
+        </div>
+    </form>
+    
+    <div class="form-footer">
+        <p>will meet you soon <span style="color: #e53e3e;">*</span> in a merge conflict </p>
+    </div>
+</div>
+
+  <footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+      <div class="ms-auto">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><small><a class="nav-link" href="https://github.com/muralitharn/" target="_blank">Made with murali-techs</a></small></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
