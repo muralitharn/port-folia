@@ -239,6 +239,17 @@ header#header{
   font-size: 14px;
 }
 
+.projects-container {
+  /* display:flex;
+  flex-direction: row; */
+  
+
+}
+.row{
+  padding: 1%;
+  /* display: grid;
+  grid-column: auto; */
+}
 /* Responsive styles for form container */
 @media (max-width: 600px) {
   .form-container {
@@ -594,10 +605,10 @@ header#header{
         <div class="col-lg-8">
           <h1 class="display-4 text-center" id="text">Murali-Tharan</h1>
           <p class="lead text-center">Software Developer</p>
-          <p class="lead">I'm a Software Developer specializing in backend development. Designing systems really piques my curiosity!</p>
+          <p class="lead">I'm a Software Developer specializing in backend development.loves Designing systems</p>
           <hr class="my-4">
           <p class="lead m-0">
-            Interests:
+            
             Springboot ,docker, jenkins ,spring security ,System Design ,AWS ,React ,Serverless ,SQL/NoSQL
           </p> 
           <hr class="my-4">
@@ -799,11 +810,13 @@ header#header{
           <h1 class="display-4 text-start">Projects</h1>
         </div>
       </div>
+
+      <div class="projects-container">
       <div class="row">
-        <div class="col-md-6 col-lg-4" id="project1">
+        <div class="col-md-6 col-lg-4 mt-4" id="project1">
           <div class="card h-100">
             <div class="card-body">
-              <h5 class="card-title"><a class="nav-link" href="subhtml\projects.html">loan-low ,routee</a></h5>
+              <h5 class="card-title"><a class="nav-link" href="error.html">loan-low</a></h5>
               <p>
                 <span class="badge bg-secondary">Springboot</span>
                 <span class="badge bg-secondary">rabbit mq </span>
@@ -814,14 +827,82 @@ header#header{
             </div>
             <div class="card-footer">
               <div class="text-center">
-                <a href="subhtml\projects.html" class="btn btn-outline-dark">Read More</a>
+                <a href="error.html" class="btn btn-outline-dark">Read More</a>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="col-md-6 col-lg-4 mt-4" id="project1">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><a class="nav-link" href="subhtml\projects.html">Routee </a></h5>
+              <p>
+                <span class="badge bg-secondary">Reactive Spring microservices</span>
+                <span class="badge bg-secondary">Mailer queue</span>
+                <span class="badge bg-secondary">Weebhooks Integration</span>
+                <span class="badge bg-secondary">Jenkins</span>
+              </p>
+              <p class="card-text"> its a politcal campaign management software 
+                that helps send large amout of message in message , text call and viber .</p>
+            </div>
+            <div class="card-footer">
+              <div class="text-center">
+                <a href="subhtml\projects.html" class="btn btn-outline-dark">Read More</a>
+                <a href="https://www.routee.net/" class="btn btn-outline-dark">view-live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mt-4" id="project1">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><a class="nav-link" href="https://www.chainsys.ai/datazap">Data-zap</a></h5>
+              <p>
+                <span class="badge bg-secondary">MVC and Microservices maven project (a product )</span>
+                <span class="badge bg-secondary">SQL</span>
+                <span class="badge bg-secondary">fusion, snowflake</span>
+                <span class="badge bg-secondary">Docker </span>
+              </p>
+              <p class="card-text"> its an ETL based domain where data
+                 from one db can be extracted and loaded to another db in ease .</p>
+            </div>
+            <div class="card-footer">
+              <div class="text-center">
+                <a href="error.html" class="btn btn-outline-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mt-4" id="project1">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><a class="nav-link" href="error.html">Global-hub</a></h5>
+              <p>
+                <span class="badge bg-secondary">spring </span>
+                <span class="badge bg-secondary">React</span>
+                <span class="badge bg-secondary">jerkins</span>
+                <span class="badge bg-secondary">docker</span>
+              </p>
+              <p class="card-text">Its an messaging system used in money transcatation between RBI Systems</p>
+            </div>
+            <div class="card-footer">
+              <div class="text-center">
+                <a href="error.html" class="btn btn-outline-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
-    </div>
-  </div>
+      </div>
+      </div>
+
+    </div> 
+  
 
   <div class="bg-gradient py-3" style="background-color: #f8f9fa;" id="follow-alongs">
     <div class="container">
@@ -833,7 +914,7 @@ header#header{
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 mt-4 ">
           <div class="card h-100">
             <div class="card-body">
               <h5 class="card-title"><a class="nav-link" href="subhtml\testtask.html">test-task</a></h5>
@@ -852,7 +933,7 @@ header#header{
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 mt-4">
           <div class="card h-100">
             <div class="card-body">
               <h5 class="card-title"><a class="nav-link" href="subhtml\rabbitmq.html">multiple Queque</a></h5>
@@ -870,6 +951,48 @@ header#header{
             </div>
           </div>
         </div>
+
+        <div class="col-md-6 col-lg-4 mt-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><a class="nav-link" href="https://portfolio-65034.web.app/">Stock brokage front end </a></h5>
+              <p>
+                <span class="badge bg-secondary">React</span>
+                <span class="badge bg-secondary">Firebase</span>
+                <span class="badge bg-secondary">MUI matreial</span>
+              </p>
+              <p class="card-text"> ample stock brokage frontend project  <a href="https://mui.com/material-ui/react-switch/" target="_blank">StockBrokerage frontend </a>.</p>
+            </div>
+            <div class="card-footer">
+              <div class="text-center">
+                <a href="https://github.com/muralitharn/Chella-UI-task" class="btn btn-outline-dark" target="_blank">My repo</a>
+                <a href="error.html" class="btn btn-outline-dark" target="_blank">View live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4 mt-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><a class="nav-link" href="https://portfolio-65034.web.app/">know me (dating app) </a></h5>
+              <p>
+                <span class="badge bg-secondary">React</span>
+                <span class="badge bg-secondary">Firebase</span>
+                <span class="badge bg-secondary">Spring boot</span>
+              </p>
+              <!-- <p class="card-text">some  refereces i took from  <a href="https://mui.com/material-ui/react-switch/" target="_blank">StockBrokerage frontend </a>.</p>
+          -->  </div> 
+            <div class="card-footer">
+              <div class="text-center">
+                <a href="https://github.com/muralitharn/know-me-front-end-" class="btn btn-outline-dark" target="_blank">My repo</a>
+                <a href="error.html" class="btn btn-outline-dark" target="_blank">View live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -885,8 +1008,39 @@ header#header{
       <p>All notable changes to this project (my career) will be documented in this section.</p>
       
       <div class="version">
-        <h3>3.0.0 - Associate Software Developer @ softsuave technologies (2024-03 to Present)</h3>
-        <h4>Added</h4>
+        <h3>3.0.2 -Software Developer @ Chella softwares ( RBI Global Payments Hub Project) (2026 to Present)</h3>
+        <h6>Developed and integrated a high-security, cross-border payment message-switching platform utilizing 
+          REST APIs over HTTPS to facilitate financial communication between domestic and foreign banks.
+            and JSON-structured services, including automated retries and complex state transitions for transaction status.
+             </h6>
+        <ul>
+          <li> Designed and managed automated end-to-end workflows for ISO 20022 compliant messages (pacs.008, pacs.004, camt.059)</li>
+          <li>Implemented multi-layered security protocols comprising AES-256 GCM symmetric encryption, RSA-2048 asymmetric key exchange, and PKCS #7 digital signatures to ensure message integrity and non-repudiation</li>
+          <li>Developed automated reconciliation and reporting mechanisms to track real-time message activity and provide granular audit trails for complex financial interchanges 😊.</li>
+        </ul>
+      
+      </div>-
+
+
+   <div class="version">
+    <h3>3.0.1 - Associate Software Developer @ chain-sys cooperatation  (2025 to 2026 may)</h3>
+    <h6>the content is -execute enterprise-level data migration and integration projects
+      across ERP and cloud systems. Designed and managed end-to-end ETL workflows including
+      data extraction, transformation, validation, and loading. Implemented automated data
+      cleansing, reconciliation, and quality checks to ensure accuracy and compliance</h6>
+    <ul>
+      <li>migrated 4 lakhs data from azure cloud to orcale fusion</li>
+      <li>with multi thread batch process migrated data from FTP data object to postgres with data cleansing and validation</li>
+      <li>pre load reconzilatation  report to check where data from sources and target are mismatch 😊.</li>
+    </ul>
+    <h4>Trainee @ chain-sys cooperatation (2025-02 to 2025-05) </h4>
+    <ul>
+      <li>learned basics in springboot , and concepts with MVC </li>
+    </ul>
+  </div>-
+
+      <div class="version">
+        <h3>3.0.0 - Associate Software Developer @ softsuave technologies (2024-03)</h3>
         <ul>
           <li>Routine consists of learning   company level project sonar qube , ratelimiting , load balancer, deployment dailycode change ,sprints  </li>
           <li>Learned, how interation between a client and understanding requirement and communicating with fellow developer </li>
@@ -894,27 +1048,23 @@ header#header{
         </ul>
         <h4>Trainee @ softsuave </h4>
         <ul>
-          <li>learened basics in springboot , and concepts with MVC </li>
+          <li>learened basics in springboot , docker , linux and other cli tools  </li>
         </ul>
-      </div>-
 
-      <div class="version">
-        <h3>2.4.0 - Trainee @ softsuave  (2024-01 to 2024-03)</h3>
-        <h4>Added</h4>
         <ul>
           <li>worked on campaign based projects involes large data dealing for a single user .</li>
           <li>had a chances to work on large number of microservices(nearly 40 services) including routee' and api gate way, spring cloud and others  <code>spring 3.00</code> and out of <code>react</code> v9.</li>
           <li>experiences on writing unit and intergation test case and running pipe lines and deployment activities.</li>
         </ul>
-        <h4>Deprecated</h4>
         <ul>
           <li>loan low (a online loan provided platform that provides loan to <code>MSME</code>) 2024-01.</li>
         </ul>
-      </div>
+      </div>-
+
+     
 
       <div class="version">
-        <h3>2.3.0 - intern  Developer @ amphyo technologies (2023-06 to 2023-011)</h3>
-        <h4>Added</h4>
+        <h3>2.3.0 - intern  Developer @ amphyo technologies (2023-06 to 2023-11)</h3>
         <ul>
           <li>I-frames  <code>Technical Leadership Community (TLC)</code>. The group of 4 member  across  ui team' worked to devlope the ui part of the e-commerces site  and i was asigned with billing part and refund part </li>
           <li>Daily code quest  <code>observability-as-code</code>consists of working on quest like solving leetcode  and hacker rank .</li>
